@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Kernel", "Kernel", "{979EB2C8-7561-424E-81B6-104ED6B6A4D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shell", "Shell", "{3D30AB7D-888B-46DF-BA47-0E9CCE682B52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs-mssql-tribe-crafter-host", "cs-mssql-tribe-crafter-host\cs-mssql-tribe-crafter-host.csproj", "{F452E545-66F4-4125-B9DC-F6C74B00B9D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs-mssql-tribe-crafter-domain", "cs-mssql-tribe-crafter-domain\cs-mssql-tribe-crafter-domain.csproj", "{36E12C81-08C8-48A6-974B-69501A3AA69F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs-mssql-tribe-crafter-infrastructure", "cs-mssql-tribe-crafter-infrastructure\cs-mssql-tribe-crafter-infrastructure.csproj", "{7D9742D5-FF2E-438F-A2F0-BB5F706EC3A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F452E545-66F4-4125-B9DC-F6C74B00B9D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F452E545-66F4-4125-B9DC-F6C74B00B9D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F452E545-66F4-4125-B9DC-F6C74B00B9D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F452E545-66F4-4125-B9DC-F6C74B00B9D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E12C81-08C8-48A6-974B-69501A3AA69F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E12C81-08C8-48A6-974B-69501A3AA69F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E12C81-08C8-48A6-974B-69501A3AA69F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E12C81-08C8-48A6-974B-69501A3AA69F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D9742D5-FF2E-438F-A2F0-BB5F706EC3A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D9742D5-FF2E-438F-A2F0-BB5F706EC3A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D9742D5-FF2E-438F-A2F0-BB5F706EC3A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D9742D5-FF2E-438F-A2F0-BB5F706EC3A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{36E12C81-08C8-48A6-974B-69501A3AA69F} = {979EB2C8-7561-424E-81B6-104ED6B6A4D0}
+		{7D9742D5-FF2E-438F-A2F0-BB5F706EC3A0} = {3D30AB7D-888B-46DF-BA47-0E9CCE682B52}
+	EndGlobalSection
+EndGlobal
