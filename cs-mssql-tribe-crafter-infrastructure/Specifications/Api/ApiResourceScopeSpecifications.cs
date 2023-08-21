@@ -1,19 +1,19 @@
-﻿namespace AmritaDb.Tribe.Infrastructure.Specifications;
+﻿namespace AmritaDb.Tribe.Infrastructure.Specifications.Api;
 
 using Duende.IdentityServer.EntityFramework.Entities;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-public class ApiResourceClaimSpecifications : IEntityTypeConfiguration<ApiResourceClaim>
+public class ApiResourceScopeSpecifications : IEntityTypeConfiguration<ApiResourceScope>
 {
-    public void Configure(EntityTypeBuilder<ApiResourceClaim> builder)
+    public void Configure(EntityTypeBuilder<ApiResourceScope> builder)
     {
         builder.Property(apiResource => apiResource.Id)
             .HasColumnName("id");
+        builder.Property(apiResource => apiResource.Scope)
+            .HasColumnName("scope");
         builder.Property(apiResource => apiResource.ApiResourceId)
             .HasColumnName("api_resource_id");
-        builder.Property(apiResource => apiResource.Type)
-            .HasColumnName("type");
     }
 }

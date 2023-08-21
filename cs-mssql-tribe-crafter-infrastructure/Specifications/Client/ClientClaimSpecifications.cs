@@ -1,10 +1,9 @@
-﻿namespace AmritaDb.Tribe.Infrastructure.Specifications;
+﻿namespace AmritaDb.Tribe.Infrastructure.Specifications.Client;
 
 using Duende.IdentityServer.EntityFramework.Entities;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
 
 public class ClientClaimSpecifications : IEntityTypeConfiguration<ClientClaim>
 {

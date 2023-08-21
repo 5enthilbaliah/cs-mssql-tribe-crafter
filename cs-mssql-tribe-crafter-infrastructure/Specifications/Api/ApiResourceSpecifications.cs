@@ -1,4 +1,4 @@
-﻿namespace AmritaDb.Tribe.Infrastructure.Specifications;
+﻿namespace AmritaDb.Tribe.Infrastructure.Specifications.Api;
 
 using Duende.IdentityServer.EntityFramework.Entities;
 
