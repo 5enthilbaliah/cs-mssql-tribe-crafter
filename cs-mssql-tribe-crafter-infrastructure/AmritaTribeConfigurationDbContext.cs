@@ -19,7 +19,7 @@ public class AmritaTribeConfigurationDbContext : ConfigurationDbContext<AmritaTr
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-         new ApiResourceClaimSpecifications()
+        new ApiResourceClaimSpecifications()
             .Configure(modelBuilder.Entity<ApiResourceClaim>());
         new ApiResourcePropertySpecifications()
             .Configure(modelBuilder.Entity<ApiResourceProperty>());
@@ -35,7 +35,7 @@ public class AmritaTribeConfigurationDbContext : ConfigurationDbContext<AmritaTr
             .Configure(modelBuilder.Entity<ApiScopeProperty>());
         new ApiScopeSpecifications()
             .Configure(modelBuilder.Entity<ApiScope>());
-        
+
         new ClientClaimSpecifications()
             .Configure(modelBuilder.Entity<ClientClaim>());
         new ClientCorsOriginSpecifications()
@@ -56,7 +56,7 @@ public class AmritaTribeConfigurationDbContext : ConfigurationDbContext<AmritaTr
             .Configure(modelBuilder.Entity<ClientSecret>());
         new ClientSpecifications()
             .Configure(modelBuilder.Entity<Client>());
-        
+
         new IdentityProviderSpecifications()
             .Configure(modelBuilder.Entity<IdentityProvider>());
         new IdentityResourceClaimSpecifications()

@@ -32,4 +32,15 @@ public static class DuendeIdentityExtensions
             IdentityResourceProperty = new TableConfiguration("resource_property", "identity")
         };
     }
+
+    public static OperationalStoreOptions SpawnOneOperationalStoreOptions()
+    {
+        return new OperationalStoreOptions
+        {
+            PersistedGrants = new TableConfiguration("persisted_grant", "grant"),
+            DeviceFlowCodes = new TableConfiguration("device_flow_code", "grant"),
+            Keys = new TableConfiguration("key", "grant"),
+            ServerSideSessions = new TableConfiguration("server_side_session", "grant")
+        };
+    }
 }

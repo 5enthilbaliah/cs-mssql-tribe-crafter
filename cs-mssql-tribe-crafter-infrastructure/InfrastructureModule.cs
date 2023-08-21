@@ -24,5 +24,15 @@ public class InfrastructureModule : Module
         }).InstancePerDependency();
         
         // OperationalStore
+        builder.Register(context =>
+        {
+            var config = context.Resolve<IConfiguration>();
+            var optionsBuilder = new DbContextOptionsBuilder<AmritaTribeOperationDbContext>();
+            optionsBuilder.UseSqlServer(config.GetConnectionString("AmritaTribeDb"));
+            return new AmritaTribeOperationDbContext(optionsBuilder.Options)
+            {
+                StoreOptions = DuendeIdentityExtensions.SpawnOneOperationalStoreOptions()
+            };
+        }).InstancePerDependency();
     }
 }
