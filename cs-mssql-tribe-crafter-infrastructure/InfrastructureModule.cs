@@ -22,5 +22,7 @@ public class InfrastructureModule : Module
                 StoreOptions = DuendeIdentityExtensions.SpawnOneConfigurationStoreOptions()
             };
         }).InstancePerDependency();
+        
+        // OperationalStore
     }
 }

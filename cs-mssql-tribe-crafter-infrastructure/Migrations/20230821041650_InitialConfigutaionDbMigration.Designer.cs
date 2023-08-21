@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AmritaDb.Tribe.Infrastructure.Migrations
 {
     [DbContext(typeof(AmritaTribeConfigurationDbContext))]
-    [Migration("20230821034605_InitialConfigutaionDbMigration")]
+    [Migration("20230821041650_InitialConfigutaionDbMigration")]
     partial class InitialConfigutaionDbMigration
     {
         /// <inheritdoc />
