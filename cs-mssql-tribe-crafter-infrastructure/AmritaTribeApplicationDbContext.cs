@@ -1,8 +1,12 @@
 ﻿namespace AmritaDb.Tribe.Infrastructure;
 
+using Duende.IdentityServer.EntityFramework.Entities;
+
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+
+using Specifications.AspNet;
 
 public class AmritaTribeApplicationDbContext : IdentityDbContext
 {
@@ -12,13 +16,14 @@ public class AmritaTribeApplicationDbContext : IdentityDbContext
         
     }
 
-    protected override void OnModelCreating(ModelBuilder builder)
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        base.OnModelCreating(builder);
-        
-        builder.Entity<IdentityRole>(b =>
-        {
-            b.ToTable("asp_net_role");
-        });
+        base.OnModelCreating(modelBuilder);
+        new IdentityRoleSpecifications()
+            .Configure(modelBuilder.Entity<IdentityRole>());
+        new IdentityUserSpecifications()
+            .Configure(modelBuilder.Entity<IdentityUser>());
+        new IdentityUserRoleSpecifications()
+            .Configure(modelBuilder.Entity<IdentityUserRole<string>>());
     }
 }
