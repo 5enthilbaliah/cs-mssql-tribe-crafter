@@ -10,13 +10,13 @@ public class ClientClaimSpecifications : IEntityTypeConfiguration<ClientClaim>
 {
     public void Configure(EntityTypeBuilder<ClientClaim> builder)
     {
-        builder.Property(clientGrantType => clientGrantType.Id)
+        builder.Property(clientClaim => clientClaim.Id)
             .HasColumnName("id");
-        builder.Property(clientGrantType => clientGrantType.Type)
+        builder.Property(clientClaim => clientClaim.Type)
             .HasColumnName("type");
-        builder.Property(clientGrantType => clientGrantType.ClientId)
+        builder.Property(clientClaim => clientClaim.ClientId)
             .HasColumnName("client_id");
-        builder.Property(clientGrantType => clientGrantType.Value)
+        builder.Property(clientClaim => clientClaim.Value)
             .HasColumnName("value");
     }
 }

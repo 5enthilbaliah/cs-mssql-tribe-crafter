@@ -9,19 +9,19 @@ public class ClientSecretSpecifications : IEntityTypeConfiguration<ClientSecret>
 {
     public void Configure(EntityTypeBuilder<ClientSecret> builder)
     {
-        builder.Property(clientGrantType => clientGrantType.Id)
+        builder.Property(clientSecret => clientSecret.Id)
             .HasColumnName("id");
-        builder.Property(clientGrantType => clientGrantType.Description)
+        builder.Property(clientSecret => clientSecret.Description)
             .HasColumnName("description");
-        builder.Property(clientGrantType => clientGrantType.Value)
+        builder.Property(clientSecret => clientSecret.Value)
             .HasColumnName("value");
-        builder.Property(clientGrantType => clientGrantType.Expiration)
+        builder.Property(clientSecret => clientSecret.Expiration)
             .HasColumnName("expiration");
-        builder.Property(clientGrantType => clientGrantType.Type)
+        builder.Property(clientSecret => clientSecret.Type)
             .HasColumnName("type");
-        builder.Property(clientGrantType => clientGrantType.Created)
+        builder.Property(clientSecret => clientSecret.Created)
             .HasColumnName("created");
-        builder.Property(clientGrantType => clientGrantType.ClientId)
+        builder.Property(clientSecret => clientSecret.ClientId)
             .HasColumnName("client_id");
     }
 }

@@ -9,11 +9,11 @@ public class ClientCorsOriginSpecifications : IEntityTypeConfiguration<ClientCor
 {
     public void Configure(EntityTypeBuilder<ClientCorsOrigin> builder)
     {
-        builder.Property(clientGrantType => clientGrantType.Id)
+        builder.Property(clientCorsOrigin => clientCorsOrigin.Id)
             .HasColumnName("id");
-        builder.Property(clientGrantType => clientGrantType.Origin)
+        builder.Property(clientCorsOrigin => clientCorsOrigin.Origin)
             .HasColumnName("origin");
-        builder.Property(clientGrantType => clientGrantType.ClientId)
+        builder.Property(clientCorsOrigin => clientCorsOrigin.ClientId)
             .HasColumnName("client_id");
     }
 }

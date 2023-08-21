@@ -9,11 +9,11 @@ public class ClientRedirectUriSpecifications : IEntityTypeConfiguration<ClientRe
 {
     public void Configure(EntityTypeBuilder<ClientRedirectUri> builder)
     {
-        builder.Property(client => client.Id)
+        builder.Property(clientRedirectUri => clientRedirectUri.Id)
             .HasColumnName("id");
-        builder.Property(client => client.ClientId)
+        builder.Property(clientRedirectUri => clientRedirectUri.ClientId)
             .HasColumnName("client_id");
-        builder.Property(client => client.RedirectUri)
+        builder.Property(clientRedirectUri => clientRedirectUri.RedirectUri)
             .HasColumnName("redirect_uri");
     }
 }

@@ -9,13 +9,13 @@ public class ClientPropertySpecifications : IEntityTypeConfiguration<ClientPrope
 {
     public void Configure(EntityTypeBuilder<ClientProperty> builder)
     {
-        builder.Property(clientGrantType => clientGrantType.Id)
+        builder.Property(clientProperty => clientProperty.Id)
             .HasColumnName("id");
-        builder.Property(clientGrantType => clientGrantType.Key)
+        builder.Property(clientProperty => clientProperty.Key)
             .HasColumnName("key");
-        builder.Property(clientGrantType => clientGrantType.Value)
+        builder.Property(clientProperty => clientProperty.Value)
             .HasColumnName("value");
-        builder.Property(clientGrantType => clientGrantType.ClientId)
+        builder.Property(clientProperty => clientProperty.ClientId)
             .HasColumnName("client_id");
     }
 }

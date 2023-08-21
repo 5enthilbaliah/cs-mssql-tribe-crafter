@@ -9,11 +9,11 @@ public class ClientScopeSpecifications : IEntityTypeConfiguration<ClientScope>
 {
     public void Configure(EntityTypeBuilder<ClientScope> builder)
     {
-        builder.Property(client => client.Id)
+        builder.Property(clientScope => clientScope.Id)
             .HasColumnName("id");
-        builder.Property(client => client.ClientId)
+        builder.Property(clientScope => clientScope.ClientId)
             .HasColumnName("client_id");
-        builder.Property(client => client.Scope)
+        builder.Property(clientScope => clientScope.Scope)
             .HasColumnName("scope");
     }
 }
