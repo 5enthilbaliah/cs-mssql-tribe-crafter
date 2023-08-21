@@ -21,5 +21,7 @@ git clone https://github.com/5enthilbaliah/cs-mssql-tribe-crafter.git
 
 - navigate in the cs-mssql-tribe-crafter and at the solution level open command prompt and execute below command.
 ```shell
-dotnet ef database update -p cs-mssql-tribe-crafter-infrastructure -s cs-mssql-tribe-crafter-host
+dotnet ef  database update -c AmritaTribeConfigurationDbContext -p cs-mssql-tribe-crafter-infrastructure -s cs-mssql-tribe-crafter-host
+
+dotnet ef  database update -c AmritaTribeOperationDbContext -p cs-mssql-tribe-crafter-infrastructure -s cs-mssql-tribe-crafter-host
 ```

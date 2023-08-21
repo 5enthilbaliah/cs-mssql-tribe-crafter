@@ -19,5 +19,11 @@ public class AmritaTribeOperationDbContext : PersistedGrantDbContext<AmritaTribe
         base.OnModelCreating(modelBuilder);
         new PersistedGrantSpecifications()
             .Configure(modelBuilder.Entity<PersistedGrant>());
+        new DeviceFlowCodesSpecifications()
+            .Configure(modelBuilder.Entity<DeviceFlowCodes>());
+        new KeySpecifications()
+            .Configure(modelBuilder.Entity<Key>());
+        new ServerSideSessionSpecifications()
+            .Configure(modelBuilder.Entity<ServerSideSession>());
     }
 }
