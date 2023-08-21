@@ -42,7 +42,7 @@ public class ClientSpecifications  : IEntityTypeConfiguration<Client>
         builder.Property(client => client.AllowAccessTokensViaBrowser)
             .HasColumnName("allow_access_tokens_via_browser");
         builder.Property(client => client.RequireDPoP)
-            .HasColumnName("requireD_d_pop");
+            .HasColumnName("require_d_pop");
         builder.Property(client => client.DPoPValidationMode)
             .HasColumnName("d_pop_validation_mode");
         builder.Property(client => client.DPoPClockSkew)
