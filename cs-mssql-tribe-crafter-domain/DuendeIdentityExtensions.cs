@@ -2,7 +2,7 @@
 
 using Duende.IdentityServer.EntityFramework.Options;
 
-public static class DuendeEntityExtensions
+public static class DuendeIdentityExtensions
 {
     public static ConfigurationStoreOptions SpawnOneConfigurationStoreOptions()
     {

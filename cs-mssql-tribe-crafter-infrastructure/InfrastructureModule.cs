@@ -19,7 +19,7 @@ public class InfrastructureModule : Module
             optionsBuilder.UseSqlServer(config.GetConnectionString("AmritaTribeDb"));
             return new AmritaTribeConfigurationDbContext(optionsBuilder.Options)
             {
-                StoreOptions = DuendeEntityExtensions.SpawnOneConfigurationStoreOptions()
+                StoreOptions = DuendeIdentityExtensions.SpawnOneConfigurationStoreOptions()
             };
         }).InstancePerDependency();
     }

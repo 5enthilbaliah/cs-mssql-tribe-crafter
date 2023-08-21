@@ -9,8 +9,11 @@ public class ClientGrantTypeSpecifications : IEntityTypeConfiguration<ClientGran
 {
     public void Configure(EntityTypeBuilder<ClientGrantType> builder)
     {
-        builder.ToTable("client_grant_type");
-        builder.Property(cartItem => cartItem.GrantType)
+        builder.Property(clientGrantType => clientGrantType.Id)
+            .HasColumnName("id");
+        builder.Property(clientGrantType => clientGrantType.GrantType)
             .HasColumnName("grant_type");
+        builder.Property(clientGrantType => clientGrantType.ClientId)
+            .HasColumnName("client_id");
     }
 }
