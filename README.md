@@ -24,4 +24,6 @@ git clone https://github.com/5enthilbaliah/cs-mssql-tribe-crafter.git
 dotnet ef  database update -c AmritaTribeConfigurationDbContext -p cs-mssql-tribe-crafter-infrastructure -s cs-mssql-tribe-crafter-host
 
 dotnet ef  database update -c AmritaTribeOperationDbContext -p cs-mssql-tribe-crafter-infrastructure -s cs-mssql-tribe-crafter-host
+
+dotnet ef  database update -c AmritaTribeApplicationDbContext -p cs-mssql-tribe-crafter-infrastructure -s cs-mssql-tribe-crafter-host
 ```
