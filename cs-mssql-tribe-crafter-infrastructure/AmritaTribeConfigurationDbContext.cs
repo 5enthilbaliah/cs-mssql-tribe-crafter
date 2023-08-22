@@ -29,7 +29,7 @@ public class AmritaTribeConfigurationDbContext : ConfigurationDbContext<AmritaTr
             .Configure(modelBuilder.Entity<ApiResourceSecret>());
         new ApiResourceSpecifications()
             .Configure(modelBuilder.Entity<ApiResource>());
-        new ApiScopeClaimSpecification()
+        new ApiScopeClaimSpecifications()
             .Configure(modelBuilder.Entity<ApiScopeClaim>());
         new ApiScopePropertySpecifications()
             .Configure(modelBuilder.Entity<ApiScopeProperty>());

@@ -5,7 +5,7 @@ using Duende.IdentityServer.EntityFramework.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-public class ApiScopeClaimSpecification : IEntityTypeConfiguration<ApiScopeClaim>
+public class ApiScopeClaimSpecifications : IEntityTypeConfiguration<ApiScopeClaim>
 {
     public void Configure(EntityTypeBuilder<ApiScopeClaim> builder)
     {
