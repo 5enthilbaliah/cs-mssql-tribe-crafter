@@ -4,6 +4,7 @@ using AmritaDb.Tribe.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AmritaDb.Tribe.Infrastructure.Migrations.AmritaTribeApplicationDb
 {
     [DbContext(typeof(AmritaTribeApplicationDbContext))]
-    partial class AmritaTribeApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230902041800_RemoveIdentityUser")]
+    partial class RemoveIdentityUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
